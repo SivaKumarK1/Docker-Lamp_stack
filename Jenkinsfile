@@ -27,11 +27,6 @@ pipeline {
         stage('Finished'){
             steps{
                 echo 'Build Successful !!'
-            }
-            post{
-                success{
-                    sh ''' /snap/bin/brave http://localhost:5000 '''    
-                }
             } 
         }
     }
