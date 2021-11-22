@@ -1,7 +1,8 @@
 #A Lamp Stack Created using Docker-Compose
 
 Do run the following lampstack
-1. ```git clone https://github.com/SivaKumarK1/Docker-Lamp_stack.git'''
+
+1. ```git clone https://github.com/SivaKumarK1/Docker-Lamp_stack.git```
 
 2. ```docker-compose up```
 
