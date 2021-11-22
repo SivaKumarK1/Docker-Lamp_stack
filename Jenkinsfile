@@ -30,7 +30,7 @@ pipeline {
             }
             post{
                 success{
-                    sh ''' brave http://localhost:5000 '''    
+                    sh ''' /snap/bin/brave http://localhost:5000 '''    
                 }
             } 
         }
