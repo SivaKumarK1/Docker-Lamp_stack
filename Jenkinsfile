@@ -10,9 +10,18 @@ pipeline {
         stage('Build') {
             steps {
                 sh '''
-                    sudo docker-compose up
+                    sudo docker-compose build
+                    sudo docker-compose up -d
                     '''
                     echo 'Docker is Up'
+            }
+        }
+        stage('push'){
+            steps{
+                sh '''
+                    sudo docker login -u "shimigami" -p "Sammy@123@@" docker.io 
+                    sudo docker push shimigami/lamp-stack:v1 
+                '''
             }
         }
         stage('Finished'){
