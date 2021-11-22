@@ -1,4 +1,4 @@
-#A Lamp Stack Created using Docker-Compose
+# A Lamp Stack Created using Docker-Compose
 
 Do run the following lampstack
 
